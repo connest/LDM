@@ -8,7 +8,7 @@
 
 ## Описание алгоритма
 
-Согласно [wikipedia.org](https://en.wikipedia.org/wiki/Largest_differencing_method), существует $\alpha$-приблеженный полиномиальный алгоритм для k = 2:
+Согласно [wikipedia.org](https://en.wikipedia.org/wiki/Largest_differencing_method), существует alpha-приблеженный полиномиальный алгоритм для k = 2:
 
 1. Отсортировать множество S по убыванию.
 2. Выбирать два наибольших числа и вставлять обратно их разность. Повторять пока не останется 1 элемент: найденная разность множеств.
@@ -38,6 +38,6 @@ assert_eq!(ldm_result.diff, 2);
 git clone https://github.com/connest/LDM.git
 cd LDM
 
-cargo test 			# запуск тестов (должны пройти!)
+cargo test 		# запуск тестов (должны пройти!)
 cargo doc --open 	# документация к библиотеке
 ```
